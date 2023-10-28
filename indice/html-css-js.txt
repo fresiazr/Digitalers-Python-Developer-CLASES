@@ -1,3 +1,43 @@
+--------
+| HTML |
+-------- 
+
+Hyper Text Markup Language (Lenguaje de Marcas de Hipertexto)
+
+HTML5
+-----
+
+W3C - World Wide Web Consortium
+WHATWG - Web Hypertext Application Technology Working Group
+
+- HTML5: Estructura y presenta el contenido
+
+- CSS: (Cascading Style Sheets) Diseño y estilos 
+
+- DOM: (Document Object Model) Manipula y accede a elementos del documento
+
+- JavaScript: Lenguaje de programación 
+
+Nombre de archivos del servidor
+-------------------------------
+
+- NO se pueden usar puntos
+- NO se pueden usar tildes
+- NO se pueden usar caracteres extraños (@, ñ ...)
+- NO se pueden utilizar espacios
+- Se pueden usar - o _
+- Se suelen usar nombres cortos o referenciales
+
+<style>
+    selector {
+        propiedad: valor;
+    }
+</style>
+
+1em = 16px
+h1 tienen 2em = 32px
+3em = 48px
+
 ENLACES
 -------
 
@@ -39,7 +79,44 @@ ATRIBUTOS
 
     - title: Proporciona un texto descriptivo emergente en el link
 
---------------------------------
+FORMULARIOS
+-----------
+
+<form action="server/codigo.php" method="post">
+
+    type:
+
+    - text (texto comun)
+    - password (contraseñas)
+    - email (si se usa con otro atributo required, nos obliga a usar un @)
+    - number (para números -> min="10" max="80")
+    - file (manejo de archivos)
+    - date
+    - time
+    - color
+    - submit
+
+    <input type="text" maxlength="40" placeholder="Ejemplo">
+
+    input type="file":
+
+    - accept: Especifica que tipo de archivos podemos seleccionar.
+                ej: .jpg, .png, .txt
+
+    - multiple: Podemos seleccionar varios archivos a la vez
+
+    - capture: Especifica método de captura en móviles
+        - user: Permite al usuario seleccionar desde la galería
+        - environment: Permite capturar archivos usando la cámara
+
+    - disabled: Desactiva el campo
+
+    - required: Indica que este campo es requerido.
+
+-------
+| CSS |
+-------
+
 selector:pseudo-clase {
     propiedad: valor;
 }
@@ -221,3 +298,62 @@ Listas ordenadas <ol>           Listas desordenadas <ul>
     - lower-roman (i)           - square (cuadrado)
     - upper-alpha (A)           - circle (circulo sin relleno)
     - upper-roman (I)
+
+--------------
+| JAVASCRIPT |
+--------------
+
+Lenguaje Interpretado: Ejecuta línea por línea
+
+OOP: Utiliza objetos y clases para organizar el código
+
+Dinámico: No necesitamos declarar el tipo de variable a utilizar
+
+Flexible: Se puede usar del lado del cliente, como en un 
+servidor (Node.js)
+
+Compatible HTML y CSS: Se integra perfectamente y permite 
+manipular sus elementos
+
+Bibliotecas y Frameworks:
+
+- jQuery
+- React 
+- Angular
+- Node.js (runtime environment)
+
+<script>
+
+</script>
+
+Regla de finalizacion automática 
+(ASI -> Automatic Semicolon Insertion)
+
+VARIABLES
+---------
+
+var edad = 25;
+let
+const
+
+if xxxx {
+    let age = 30;
+}
+
+----------------------------------------
+
+document.write() -> Escribe en el documento HTML
+
+prompt()
+confirm()
+
+----------------------------------------
+
+OPERADORES
+----------
+
+var nombre = 'Juan'; // Operador de Asignación
+var edad = 20; 
+
+edad++; // Incrementa la variable edad en 1
+edad--; // Le resta 1 a edad
